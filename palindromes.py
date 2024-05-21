@@ -1,15 +1,6 @@
 
 def is_palindrome(word):
-    length = len(word)
-    front = 0
-    back = length - 1
-    is_palindrome_test = True
-    while (front <= back):
-        if (word[front] != word[back]):
-            is_palindrome_test = False
-        front += 1
-        back -= 1
-    return is_palindrome_test
+    return word == word[::-1]
 
 def main():
     
